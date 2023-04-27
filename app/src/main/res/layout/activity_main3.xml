@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#814B44"
+    tools:context=".MainActivity3">
+
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="107dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_ct"
+        android:textColor="@color/black"
+        android:text="Hồi máu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:background="@drawable/button_ct"
+        android:layout_width="107dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="53dp"
+        android:textColor="@color/black"
+        android:text="Tăng máu"
+        app:layout_constraintBottom_toTopOf="@+id/button_3"
+        app:layout_constraintEnd_toEndOf="@+id/button_3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_3" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:background="@drawable/button_ct"
+        android:layout_width="107dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="53dp"
+        android:textColor="@color/black"
+        android:text="Tăng tấn công"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_2"
+        app:layout_constraintEnd_toEndOf="@+id/button_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_2" />
+
+    <TextView
+        android:id="@+id/textView_TangCong"
+        android:background="@drawable/button_ct"
+        android:gravity="center"
+        android:layout_width="233dp"
+        android:layout_height="86dp"
+        android:textColor="@color/black"
+        android:text="Tăng tấn công "
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_HoiMau"
+        app:layout_constraintStart_toStartOf="@+id/textView_HoiMau"
+        app:layout_constraintTop_toTopOf="@+id/button_1" />
+
+    <TextView
+        android:id="@+id/textView_HoiMau"
+        android:background="@drawable/button_ct"
+        android:gravity="center"
+        android:layout_width="233dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:text="Hồi máu"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_3"
+        app:layout_constraintEnd_toStartOf="@+id/button_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_3" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView_TangMau"
+        android:background="@drawable/button_ct"
+        android:layout_width="233dp"
+        android:layout_height="86dp"
+        android:textColor="@color/black"
+        android:text="Tăng máu "
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_HoiMau"
+        app:layout_constraintStart_toStartOf="@+id/textView_HoiMau"
+        app:layout_constraintTop_toTopOf="@+id/button_2" />
+
+    <TextView
+        android:id="@+id/man"
+        android:gravity="center"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tien"
+        android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/button_Xacnhan"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:background="@drawable/button_ct"
+        android:textColor="@color/black"
+        android:text="Xác nhận"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/man"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/man"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/tv_tancong"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_mau"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tien"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tien"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tien" />
+
+    <TextView
+        android:id="@+id/tv_mau"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_TangCong"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tien"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tien"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
