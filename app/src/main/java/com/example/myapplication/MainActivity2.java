@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity2 extends Activity {
-    private int mau_Player,mau_Player_ht,tancong_player,tancong_bot,mau_Bot_ht,mau_Bot,Tien,x,y,bn,kt=0;
+    private int mau_Player,mau_Player_ht,tancong_player,tancong_bot,mau_Bot_ht,mau_Bot,Tien,x,y,kt=0;
     private Context context;
     private ProgressBar thanhmau1,thanhmau2;
     private Button[] buttons = new Button[100];
@@ -26,7 +26,6 @@ public class MainActivity2 extends Activity {
     private TextView tvMan,tvTien,dmgB,dmgP;
     int max=5;
     int min=2;
-    String code;
     //Intent intent;
 
     ArrayList<Integer> listImg ;
@@ -40,10 +39,8 @@ public class MainActivity2 extends Activity {
         context = this;
         hamgoiid();
         Man=1;
-        if(Man==1) {
             mau_Bot = mau_Bot_ht = mau_Player_ht = mau_Player = 3;
             tancong_bot = tancong_player = 1;
-        }
         tvMan.setText("Màn "+Man);
         listImg = new ArrayList<>();
 
@@ -162,7 +159,7 @@ public class MainActivity2 extends Activity {
         }
 
         if(mau_Bot_ht<=0){
-            bn = (int) (Math.random()*((max-min)+1))+min;
+            int bn = (int) (Math.random()*((max-min)+1))+min;
             Tien = Tien+bn;
             Man++;
             tvTien.setText("Tiền "+Tien);
